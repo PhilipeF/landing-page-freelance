@@ -1,29 +1,110 @@
- {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
 }
 
-aside h1 {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 75px;
+a {
+  text-decoration: none;
 }
 
-aside h1 span {
-    color: #FF5678;
+.content {
+  display: grid;
+  grid-template-areas:
+    ". . . . ."
+    ". hero . form ."
+    ". . . . .";
+  gap: 8.5rem;
+}
+
+aside {
+  grid-area: hero;
 }
 
 main {
-    weight: 600px;
-    height: 520px;
-    border: 1px solid rgba(0, 0, 0.15)
+  grid-area: form;
+}
+
+/* .content {
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  gap: 20rem;
+  margin-top: 8.5rem;
+  margin-bottom: 9.5rem;
+} */
+
+aside h1 {
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 75px;
+  margin-top: 5.5rem;
+}
+
+h1 span,
+h2 span {
+  color: #ff5678;
+}
+
+main {
+  width: 60rem;
+  height: 52rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 4.4rem 5.5rem;
 }
 
 main h2 {
-    font-weight: 500;
+  font-size: 3.6rem;
+  font-weight: 500;
+  max-width: 43rem;
+  margin-bottom: 5.4rem;
+}
+
+main .actions {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.actions a {
+  background-color: #35e6e9;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  height: 5.5rem;
+  text-decoration: none;
+}
+
+.actions a + a {
+  background-color: #ff5678;
+  margin-top: 4.8rem;
+}
+
+/* main footer {
+  text-align: center;
+} */
+
+main footer p {
+  font-size: 1.4rem;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+main footer a {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
 }
