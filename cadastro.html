@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>We form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,15 +21,19 @@
         </aside>
 
         <main>
-            <h2 class="home">Cadastre sua <span>entidade</span> ou acesse dados <span>de parceiras</span></h2>
-            <div class="actions">
-                <a href="cadastro.html">Cadastrar entidade</a>
-                <a href="#">Verificar entidades cadastradas</a>
+            <div class="header-nova-entidade">
+                <a href="index.html"><img src="./img/seta a esquerda.svg" alt="" /> </a>
+                <h2>Nova <span>entidade</span></h2>
             </div>
-            <footer>
-                <p>Sua entidade não se enquadra nos campos de atuação disponíveis?</p>
-                <a href="#">Registrar um novo campo de atuação</a>
-            </footer>
+            <form action="">
+                <label>nome</label>
+                <input type="text" />
+                <label>campo de atuação</label>
+                <input type="text" />
+                <label>pontos de venda</label>
+                <input type="text" />
+                <button type="submit">Cadastrar</button>
+            </form>
         </main>
 
     </div>

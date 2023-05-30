@@ -17,14 +17,14 @@ a {
   text-decoration: none;
 }
 
-.content {
+/* .content {
   display: grid;
   grid-template-areas:
     ". . . . ."
     ". hero . form ."
     ". . . . .";
   gap: 8.5rem;
-}
+} */
 
 aside {
   grid-area: hero;
@@ -34,14 +34,14 @@ main {
   grid-area: form;
 }
 
-/* .content {
+.content {
   display: flex;
   justify-content: center;
-  align-item: center;
-  gap: 20rem;
+  align-items: center;
+  gap: 18rem;
   margin-top: 8.5rem;
   margin-bottom: 9.5rem;
-} */
+}
 
 aside h1 {
   font-size: 6.4rem;
@@ -85,16 +85,18 @@ main .actions {
   border-radius: 1.2rem;
   height: 5.5rem;
   text-decoration: none;
+  opacity: 0.9;
+  transation: 0.3s;
+}
+
+.actions a:hover {
+  opacity: 1;
 }
 
 .actions a + a {
   background-color: #ff5678;
   margin-top: 4.8rem;
 }
-
-/* main footer {
-  text-align: center;
-} */
 
 main footer p {
   font-size: 1.4rem;
@@ -105,6 +107,50 @@ main footer p {
 main footer a {
   margin-top: 1rem;
   font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
   display: block;
   text-align: center;
+}
+
+/* cadastro.html */
+.header-nova-entidade {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.header-nova-entidade h2 {
+  margin-bottom: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  height: 5.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background: #35e6e9;
+  border-radius: 1.2rem;
+  border: none;
+  height: 5.5rem;
+  font-size: 3.6rem;
+  color: #fff;
+  margin-top: 1rem;
 }
