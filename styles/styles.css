@@ -68,6 +68,7 @@ main h2 {
 main .actions {
   display: flex;
   flex-flow: column wrap;
+  gap: 0.7rem;
 }
 
 .actions a {
@@ -152,4 +153,29 @@ button {
   color: #fff;
   margin-top: 2.5rem;
   cursor: pointer;
+}
+
+/* registrar_novo_campo.html */
+.actions p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.actions select {
+  height: 5.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 1.2rem;
+}
+
+.actions p:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.actions span {
+  color: #ff5678;
+  justify-content: center;
+  display: flex;
 }
